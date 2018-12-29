@@ -1,0 +1,3 @@
+altcore/.idea/*
+altcore/db.sqlite3
+*.pyc
