@@ -10,9 +10,9 @@ def configure(attrs_dict):
     fields = {}
 
     for entitie, items in scheme.SCHEME.items():
-        entities[entitie] = models.ManyToManyField('self', related_name=entitie.lower(), null=True)
+        entities[entitie.lower()] = models.ManyToManyField('self')
         for feature in items['features']:
-            fields[feature['name']] = feature['type']
+            fields[feature['name'].lower()] = feature['type']
 
     attrs_dict.update(**fields)
     attrs_dict.update(**entities)

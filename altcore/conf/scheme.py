@@ -18,20 +18,5 @@ SCHEME = {
             }
         ],
         'routes': 'entity_one'
-    },
-    'EntityTwo': {
-        'features': [
-            {
-                'name': 'FeatureTwo',
-                'type': models.CharField(max_length=100)
-            }
-        ],
-        'links': [
-            {
-                'name': 'LinkTwo',
-                'linked_with': 'EntityOne'
-            }
-        ],
-        'routes': 'entity_two'
     }
 }
